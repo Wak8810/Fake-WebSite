@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import { goto } from "$app/navigation";
+
+    function movetohome(){
+        goto('/Home');
+    }
+</script>
+
+<h1>この先にみられるサイトは偽物のサイトです。</h1>
+<button on:click={movetohome}>オッケー！</button>
